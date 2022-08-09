@@ -187,8 +187,8 @@ button:hover
     position: fixed;
     z-index: 10;
 
-    top: 75%;
-    left: 70%;
+    top: 80%;
+    left: 80%;
 
     width: 70px;
     height: 60px;
@@ -212,4 +212,21 @@ button:hover
 .warning
 {
     border: 1px solid rgba(255, 0, 0, 0.934);
+}
+
+.github
+{
+    position: fixed;
+    z-index: 10;
+    top: 50px;
+    left: 50px;
+}
+
+.fa-github-alt
+{
+    color: #1dd1a1;
+    font-size: 3rem;
+    padding: 2px;
+
+    text-shadow: 2px 2px 3px black;
 }
