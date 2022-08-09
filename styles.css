@@ -1,0 +1,215 @@
+/* CSS STYLING */
+
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Noto+Sans+JP:wght@500&family=Poppins:wght@200&family=Roboto:wght@300&family=Ubuntu:wght@300;400&display=swap');
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* border: none; */
+    all: none;
+}
+
+body
+{
+    background-color: whitesmoke;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Mouse Memoirs , sans-serif;
+}
+
+.f-container
+{
+    width: 50%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.f-container > h1
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+/* INPUT SECTION */
+
+.addANote
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: baseline;
+
+    width: 100%;
+
+    margin-left: 30%;
+    margin-top: 20px;
+
+    margin-bottom: 40px;
+}
+
+.addANote > h2
+{
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+#noteTitle
+{
+    width: 70%;
+    padding: 2px;
+    margin-bottom: 4px;
+
+    text-transform:uppercase;
+
+    font-family: Mouse Memoirs , sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+#noteContent
+{
+    width: 70%;
+    padding: 2px;
+    margin-bottom: 4px;
+
+    text-transform: capitalize;
+    font-family: Mouse Memoirs , sans-serif;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+
+.addBtn
+{
+    width: 150px;
+    height: 30px;
+
+    font-family: Mouse Memoirs , sans-serif;
+    letter-spacing: 1px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #1dd1a1;
+    border: none;
+    border-radius: 2px;
+
+    box-shadow: 1px 1px 4px black;
+}
+
+.addBtn > i
+{
+    font: 900;
+    padding-right: 5px ;
+}
+
+
+/* OUTPUT SECTION */
+
+.noteList
+{
+    width: 70%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.noteItem
+{
+    border-bottom: 1px solid rgb(76, 75, 75);
+    border-right: 1px solid rgb(76, 75, 75);
+    border-left: 1px solid rgba(135, 133, 133, 0.529);
+    border-top: 1px solid rgba(120, 118, 118, 0.528);
+
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+
+    box-shadow: 1px 1px 10px rgb(54, 53, 53);
+}
+
+.noteItem > h3
+{
+    font-size: 1.4rem;
+    padding-bottom: 5px;
+    font-weight: 100;
+}
+
+.noteItem > p
+{
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: rgb(73, 72, 72);
+}
+
+.delBtn
+{
+    margin-left: 100px;
+    margin-top: 23px;
+
+    font-size: 0.6rem;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    background-color: #1dd1a1;
+    border: none;
+    border-radius: 2px;
+
+    box-shadow: 1px 1px 4px black;
+}
+
+button:hover
+{
+    cursor: pointer;
+    background-color: #2cba94;
+}
+
+.delAllBtn
+{
+    position: fixed;
+    z-index: 10;
+
+    top: 75%;
+    left: 70%;
+
+    width: 70px;
+    height: 60px;
+
+    background-color: #1dd1a1;
+    border: none;
+    border-radius: 2px;
+
+    box-shadow: 1px 1px 4px black;
+
+    letter-spacing: 2px;
+
+    transform: rotate(20deg);
+}
+
+.delAllBtn > .fa-trash
+{
+    font-size: 2rem;
+}
+
+.warning
+{
+    border: 1px solid rgba(255, 0, 0, 0.934);
+}
