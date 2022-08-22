@@ -230,3 +230,53 @@ button:hover
 
     text-shadow: 2px 2px 3px black;
 }
+
+
+
+
+/* Responsive using media queries */
+
+@media only screen and (max-width : 460px)
+{
+
+    .f-container
+    {
+        width: 90%;
+        height: 90%;
+    }
+
+    .f-container > h1
+    {
+        font-size: 2.5rem;
+    }
+
+    .noteItem
+    {
+        width: 80%;
+        height: 200px;
+    }
+
+    .delAllBtn
+    {
+        left: 75%;
+        width: 50px;
+        height: 50px;
+    }
+
+    .delAllBtn > .fa-trash
+    {
+        font-size: 1.5rem;
+    }
+
+    .github
+    {
+        top: 30px;
+        left: 30px;
+    }
+
+    .fa-github-alt
+    {
+        font-size: 2.2rem;
+    }
+
+}
